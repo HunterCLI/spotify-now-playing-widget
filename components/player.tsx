@@ -66,6 +66,7 @@ const Player = ({
             }
 
             #track {
+              color: #FFF;
               animation-delay: 400ms;
             }
             #artist {
@@ -141,7 +142,7 @@ const Player = ({
           <Text id="track" weight="bold">
             {`${track ?? ""} `.trim()}
           </Text>
-          <Text id="artist" color={!track ? "gray" : undefined}>
+          <Text id="artist" color={"white"}>
             {artist || "Nothing playing..."}
           </Text>
           {track && (
